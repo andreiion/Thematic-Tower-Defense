@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1787703703320548}
+  m_IsPrefabParent: 1
+--- !u!1 &1787703703320548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4875649046253938}
+  - component: {fileID: 114653388559322042}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4875649046253938
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787703703320548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5410179, y: -0.009881653, z: -0.028938735}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114653388559322042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787703703320548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe11adb4c3334716b5c6a6038b52a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilePrefabs:
+  - {fileID: 1884993983142766, guid: 2fd6a4ea284d64667b191ab36631efac, type: 2}
+  - {fileID: 1463386027137206, guid: 886b2e78dd63d488886da54e69d65781, type: 2}
+  - {fileID: 1079975009453312, guid: 368f1934bcedc448999d5608242296ac, type: 2}
+  - {fileID: 1075817854487806, guid: 9d9840d2221f44bfcbc14d295b8add83, type: 2}
+  - {fileID: 1205611620241774, guid: a2fbaaac28d7244c88143cc112059fda, type: 2}
+  - {fileID: 1099628598636328, guid: 052635d0b9124475e9c1df064e4d0c74, type: 2}
+  cameraMovement: {fileID: 0}
+  map: {fileID: 0}
+  bluePortalPrefab: {fileID: 1398186646756706, guid: 4128fa0949de54d67976a2be351f75a7,
+    type: 2}
+  redPortalPrefab: {fileID: 1890929368590162, guid: 7d3ee3224d08448ab9b5179ed66d1791,
+    type: 2}
