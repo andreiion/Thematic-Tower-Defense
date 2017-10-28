@@ -1,15 +1,24 @@
 fileFormatVersion: 2
 guid: ab1643c38ce08410e877ee54c70067da
-timeCreated: 1509209580
+timeCreated: 1509216822
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Ricks_0
+    21300000: Ricks_14
     21300002: Ricks_1
     21300004: Ricks_2
     21300006: Ricks_3
-    21300008: Ricks_4
-    21300010: Ricks_5
+    21300008: Ricks_3
+    21300010: Ricks_4
+    21300012: Ricks_5
+    21300014: Ricks_6
+    21300016: Ricks_7
+    21300018: Ricks_8
+    21300020: Ricks_9
+    21300022: Ricks_10
+    21300024: Ricks_11
+    21300026: Ricks_14
+    21300028: Ricks_0
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -137,10 +146,21 @@ TextureImporter:
         width: 125
         height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: -62.5, y: 76}
+        - {x: -62.5, y: -30}
+        - {x: -21.5, y: -80}
+        - {x: 22.5, y: -80}
+        - {x: 62.5, y: -51}
+        - {x: 62.5, y: 76}
+      physicsShape:
+      - - {x: -62.5, y: 76}
+        - {x: -62.5, y: -80}
+        - {x: 20.5, y: -80}
+        - {x: 62.5, y: -29}
+        - {x: 62.5, y: 76}
       tessellationDetail: 0
     - serializedVersion: 2
       name: Ricks_2
@@ -151,9 +171,13 @@ TextureImporter:
         width: 5
         height: 1
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -2.5, y: -0.5}
+        - {x: -2.5, y: 0.5}
+        - {x: 2.5, y: 0.5}
+        - {x: 2.5, y: -0.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -165,13 +189,25 @@ TextureImporter:
         width: 125
         height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: -62.5, y: 77}
+        - {x: -62.5, y: -8}
+        - {x: -18.5, y: -80}
+        - {x: 62.5, y: -80}
+        - {x: 62.5, y: 77}
+      physicsShape:
+      - - {x: -62.5, y: 77}
+        - {x: -62.5, y: -52}
+        - {x: -55.5, y: -80}
+        - {x: 29.5, y: -80}
+        - {x: 62.5, y: -54}
+        - {x: 62.5, y: 59}
+        - {x: 52.5, y: 77}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Ricks_4
+      name: Ricks_3
       rect:
         serializedVersion: 2
         x: 262
@@ -179,13 +215,24 @@ TextureImporter:
         width: 125
         height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: -62.5, y: 76}
+        - {x: -62.5, y: -30}
+        - {x: -21.5, y: -80}
+        - {x: 22.5, y: -80}
+        - {x: 62.5, y: -51}
+        - {x: 62.5, y: 76}
+      physicsShape:
+      - - {x: -62.5, y: 76}
+        - {x: -62.5, y: -80}
+        - {x: 20.5, y: -80}
+        - {x: 62.5, y: -29}
+        - {x: 62.5, y: 76}
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Ricks_5
+      name: Ricks_4
       rect:
         serializedVersion: 2
         x: 391
@@ -193,10 +240,344 @@ TextureImporter:
         width: 125
         height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: -52.5, y: 75}
+        - {x: -62.5, y: 65}
+        - {x: -62.5, y: -36}
+        - {x: -42.5, y: -74}
+        - {x: -11.5, y: -80}
+        - {x: 35.5, y: -80}
+        - {x: 62.5, y: -39}
+        - {x: 62.5, y: 61}
+        - {x: 40.5, y: 75}
+      physicsShape:
+      - - {x: -62.5, y: 75}
+        - {x: -62.5, y: -38}
+        - {x: -15.5, y: -80}
+        - {x: 52.5, y: -80}
+        - {x: 62.5, y: -57}
+        - {x: 62.5, y: 75}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ricks_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 168
+        width: 125
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 78}
+        - {x: -34.5, y: 53}
+        - {x: -46.5, y: 21}
+        - {x: -46.5, y: -39}
+        - {x: -21.5, y: -79}
+        - {x: 25.5, y: -79}
+        - {x: 62.5, y: -32}
+        - {x: 62.5, y: 78}
+      physicsShape:
+      - - {x: 20.5, y: 78}
+        - {x: -5.5, y: 78}
+        - {x: -46.5, y: 30}
+        - {x: -46.5, y: -20}
+        - {x: -18.5, y: -79}
+        - {x: 31.5, y: -79}
+        - {x: 62.5, y: -24}
+        - {x: 62.5, y: 55}
+        - {x: 53.5, y: 66}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ricks_5
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 168
+        width: 125
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 79}
+        - {x: -46.5, y: 45}
+        - {x: -46.5, y: -51}
+        - {x: -40.5, y: -79}
+        - {x: 26.5, y: -79}
+        - {x: 62.5, y: -12}
+        - {x: 62.5, y: 77}
+        - {x: 58.5, y: 79}
+      physicsShape:
+      - - {x: -46.5, y: -77}
+        - {x: -38.5, y: -79}
+        - {x: 24.5, y: -79}
+        - {x: 62.5, y: -38}
+        - {x: 62.5, y: 48}
+        - {x: 54.5, y: 71}
+        - {x: 23.5, y: 79}
+        - {x: -7.5, y: 79}
+        - {x: -46.5, y: 40}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ricks_6
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 168
+        width: 125
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 78.5}
+        - {x: -34.5, y: 53.5}
+        - {x: -46.5, y: 21.5}
+        - {x: -46.5, y: -38.5}
+        - {x: -21.5, y: -78.5}
+        - {x: 25.5, y: -78.5}
+        - {x: 62.5, y: -31.5}
+        - {x: 62.5, y: 78.5}
+      physicsShape:
+      - - {x: 20.5, y: 78.5}
+        - {x: -5.5, y: 78.5}
+        - {x: -46.5, y: 30.5}
+        - {x: -46.5, y: -19.5}
+        - {x: -18.5, y: -78.5}
+        - {x: 31.5, y: -78.5}
+        - {x: 62.5, y: -23.5}
+        - {x: 62.5, y: 55.5}
+        - {x: 53.5, y: 66.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ricks_7
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 168
+        width: 125
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 79}
+        - {x: -46.5, y: 37}
+        - {x: -46.5, y: -62}
+        - {x: -31.5, y: -79}
+        - {x: 38.5, y: -79}
+        - {x: 62.5, y: -55}
+        - {x: 62.5, y: 79}
+      physicsShape:
+      - - {x: -46.5, y: 60}
+        - {x: -46.5, y: -79}
+        - {x: 62.5, y: -79}
+        - {x: 62.5, y: 79}
+        - {x: -35.5, y: 79}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ricks_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2
+        width: 125
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.5, y: 76}
+        - {x: -44.5, y: 76}
+        - {x: -62.5, y: 48}
+        - {x: -62.5, y: -43}
+        - {x: -52.5, y: -72}
+        - {x: -24.5, y: -81}
+        - {x: 24.5, y: -81}
+        - {x: 38.5, y: -59}
+        - {x: 62.5, y: -22}
+        - {x: 62.5, y: 45}
+      physicsShape:
+      - - {x: 58.5, y: 75}
+        - {x: -61.5, y: 75}
+        - {x: -61.5, y: -51}
+        - {x: -51.5, y: -80}
+        - {x: -48.5, y: -81}
+        - {x: 38.5, y: -81}
+        - {x: 62.5, y: -24}
+        - {x: 62.5, y: 66}
+        - {x: 61.5, y: 74}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ricks_9
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 2
+        width: 125
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.5, y: 68}
+        - {x: 20.5, y: 75}
+        - {x: -44.5, y: 75}
+        - {x: -62.5, y: 44}
+        - {x: -62.5, y: -30}
+        - {x: -39.5, y: -62}
+        - {x: -6.5, y: -80}
+        - {x: 23.5, y: -80}
+        - {x: 62.5, y: -19}
+        - {x: 62.5, y: 39}
+        - {x: 55.5, y: 61}
+      physicsShape:
+      - - {x: -44.5, y: 74}
+        - {x: -61.5, y: 55}
+        - {x: -61.5, y: -53}
+        - {x: -50.5, y: -76}
+        - {x: -28.5, y: -80}
+        - {x: 35.5, y: -80}
+        - {x: 62.5, y: -25}
+        - {x: 62.5, y: 54}
+        - {x: 41.5, y: 74}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ricks_10
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2
+        width: 125
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.5, y: 76}
+        - {x: -44.5, y: 76}
+        - {x: -62.5, y: 48}
+        - {x: -62.5, y: -43}
+        - {x: -52.5, y: -72}
+        - {x: -24.5, y: -81}
+        - {x: 24.5, y: -81}
+        - {x: 38.5, y: -59}
+        - {x: 62.5, y: -22}
+        - {x: 62.5, y: 45}
+      physicsShape:
+      - - {x: 58.5, y: 75}
+        - {x: -61.5, y: 75}
+        - {x: -61.5, y: -51}
+        - {x: -51.5, y: -80}
+        - {x: -48.5, y: -81}
+        - {x: 38.5, y: -81}
+        - {x: 62.5, y: -24}
+        - {x: 62.5, y: 66}
+        - {x: 61.5, y: 74}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ricks_11
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 3
+        width: 125
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43.5, y: 77.5}
+        - {x: -47.5, y: 77.5}
+        - {x: -62.5, y: 54.5}
+        - {x: -62.5, y: -35.5}
+        - {x: -40.5, y: -80.5}
+        - {x: 37.5, y: -80.5}
+        - {x: 57.5, y: -76.5}
+        - {x: 62.5, y: -46.5}
+        - {x: 62.5, y: 55.5}
+        - {x: 46.5, y: 76.5}
+      physicsShape:
+      - - {x: 34.5, y: 76.5}
+        - {x: -42.5, y: 76.5}
+        - {x: -61.5, y: 60.5}
+        - {x: -61.5, y: -30.5}
+        - {x: -21.5, y: -74.5}
+        - {x: -11.5, y: -80.5}
+        - {x: 4.5, y: -80.5}
+        - {x: 36.5, y: -60.5}
+        - {x: 62.5, y: -23.5}
+        - {x: 62.5, y: 64.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ricks_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 500
+        width: 360
+        height: 731
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: 358.5}
+        - {x: -177, y: 327.5}
+        - {x: -177, y: -365.5}
+        - {x: 164, y: -365.5}
+        - {x: 164, y: 337.5}
+        - {x: 98, y: 358.5}
+      - - {x: -57, y: -68.5}
+        - {x: -57, y: -67.5}
+        - {x: -53, y: -63.5}
+        - {x: -54, y: -62.5}
+        - {x: -55, y: -63.5}
+        - {x: -53, y: -65.5}
+        - {x: -64, y: -118.5}
+      - - {x: -180, y: 365.5}
+        - {x: -180, y: 362.5}
+        - {x: 180, y: 362.5}
+        - {x: 180, y: 365.5}
+      physicsShape:
+      - - {x: 104, y: 23.5}
+        - {x: 79, y: 32.5}
+        - {x: 153, y: 108.5}
+        - {x: 164, y: 137.5}
+        - {x: 164, y: 349.5}
+        - {x: 142, y: 357.5}
+        - {x: -76, y: 357.5}
+        - {x: -130, y: 205.5}
+        - {x: -74, y: 78.5}
+        - {x: -30, y: 39.5}
+        - {x: -54, y: 28.5}
+        - {x: -177, y: -102.5}
+        - {x: -177, y: -179.5}
+        - {x: -99, y: -365.5}
+        - {x: 163, y: -365.5}
+        - {x: 162, y: -337.5}
+        - {x: 149, y: -217.5}
+        - {x: 116, y: 7.5}
+      - - {x: -68, y: -209.5}
+        - {x: -81, y: -101.5}
+        - {x: -56, y: -68.5}
+        - {x: -57, y: -66.5}
+        - {x: -53, y: -63.5}
+        - {x: -53, y: -61.5}
+        - {x: -54, y: -63.5}
+        - {x: -52, y: -66.5}
+        - {x: -53, y: -73.5}
+        - {x: -54, y: -91.5}
+        - {x: -62, y: -114.5}
+        - {x: -62, y: -216.5}
+        - {x: -62, y: -215.5}
+      - - {x: -180, y: 365.5}
+        - {x: -180, y: 362.5}
+        - {x: 180, y: 362.5}
+        - {x: 180, y: 365.5}
       tessellationDetail: 0
     outline:
     - - {x: -458.5, y: 616}
