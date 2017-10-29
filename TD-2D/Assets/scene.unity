@@ -137,6 +137,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 39148789}
   m_Enabled: 1
+  m_ExtensionPropertyValues: []
 --- !u!124 &39148791
 Behaviour:
   m_ObjectHideFlags: 0
@@ -264,12 +265,12 @@ Prefab:
     - target: {fileID: 224880009387913080, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 485.5
+      value: 0.54101944
       objectReference: {fileID: 0}
     - target: {fileID: 224880009387913080, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 202.5
+      value: -0.009880066
       objectReference: {fileID: 0}
     - target: {fileID: 224880009387913080, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}

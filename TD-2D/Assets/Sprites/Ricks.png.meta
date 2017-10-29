@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ab1643c38ce08410e877ee54c70067da
-timeCreated: 1509216822
+timeCreated: 1509265865
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -483,9 +483,9 @@ TextureImporter:
       name: Ricks_11
       rect:
         serializedVersion: 2
-        x: 390
+        x: 392
         y: 3
-        width: 125
+        width: 123
         height: 161
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
