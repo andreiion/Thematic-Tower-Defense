@@ -20,8 +20,15 @@ public class GameManager : Singleton<GameManager > {
 	[SerializeField]
 	private Text currencyText;
 
-	// Use this for initialization
-	void Start () {
+    public ObjectPool Pool { get; set; }
+
+    private void Awake()
+    {
+        Pool = GetComponent<ObjectPool>();
+    }
+
+    // Use this for initialization
+    void Start () {
 		Currency = 5; 
 	}
 	
@@ -50,5 +57,39 @@ public class GameManager : Singleton<GameManager > {
 			Hover.Instance.Deactivate ();
 		}
 	}
+
+    // functia asta se apeleaza cand apesi pe butonu' next wave
+    public void StartWave()
+    {
+        StartCoroutine(SpawnWave());
+    }
+
+    // tipu' inamicului
+    private IEnumerator SpawnWave()
+    {
+        int monsterIndex = Random.Range(0,3);
+
+        string type = string.Empty;
+
+        switch (monsterIndex)
+        {
+            case 0:
+                type = "JerryMoveForward";
+                break;
+            case 1:
+                type = "BirdPersonMoveForward";
+                break;
+            case 2:
+                type = "MrNeedfullMoveForward";
+                break;
+            default:
+                break;
+        }
+        //Pool.GetObject(type);
+        Monster monster = Pool.GetObject(type).GetComponent<Monster>();
+        monster.Spawn();
+
+        yield return new WaitForSeconds(2.5f);
+    }
 
 }

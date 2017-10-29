@@ -28,7 +28,9 @@ public class LevelManager : Singleton<LevelManager> {
 
 	public Dictionary<Point, TileScript> Tiles { get; set; }
 
-	private Point mapSize;
+    public Portal BluePortal { get; set; }
+
+    private Point mapSize;
 
 	public float TileSize {
 		get { return tilePrefabs[0].GetComponent<SpriteRenderer> ().sprite.bounds.size.x; }
@@ -96,13 +98,19 @@ public class LevelManager : Singleton<LevelManager> {
 
 	private void SpawnPortals(Point start, int portal) {
 
-		if (portal == RED_PORTAL) {
+        // !!! atentie aici! initial era == red_portal, dar portalele erau pe dos
+        // am modificat doar conditia si am pus !=, nu am mai stat sa gandesc exact ce se intampla
+		if (portal != RED_PORTAL) {
 			redSpawn = start;
 			Instantiate (redPortalPrefab, Tiles [redSpawn].transform.position, Quaternion.identity);
+            
 		} else {
 			blueSpawn = start;
-			Instantiate (bluePortalPrefab, Tiles [blueSpawn].GetComponent<TileScript>().worldPos , Quaternion.identity);
-		}
+            GameObject tmp = (GameObject)Instantiate (bluePortalPrefab, Tiles [blueSpawn].GetComponent<TileScript>().worldPos , Quaternion.identity);
+            BluePortal = tmp.GetComponent<Portal>();
+
+            BluePortal.name = "BluePortal";
+        }
 	}
 
 	public bool InBounds(Point position) {

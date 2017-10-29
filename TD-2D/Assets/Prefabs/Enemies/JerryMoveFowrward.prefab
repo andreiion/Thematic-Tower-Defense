@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4545371913872774}
   - component: {fileID: 212318854140097828}
   - component: {fileID: 95436114995902498}
+  - component: {fileID: 114741099814320598}
   m_Layer: 0
   m_Name: JerryMoveFowrward
   m_TagString: Enemy
@@ -58,6 +59,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114741099814320598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1338657119432806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc545a3b06f00ab48a4eac131e4d95ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212318854140097828
 SpriteRenderer:
   m_ObjectHideFlags: 1
