@@ -12,6 +12,9 @@ public class TowerBtn : MonoBehaviour {
 	private Sprite sprite;
 
 	private int price;
+	private int rickPrice;
+	private int mortyPrice;
+	private int summerPrice;
 
 	[SerializeField]
 	public Text priceText; 
@@ -38,6 +41,9 @@ public class TowerBtn : MonoBehaviour {
 	}
 
 	public void Start() {
+		rickPrice = 200;
+		mortyPrice = 150;
+		summerPrice = 100;
 		Price = 2;
 	}
 }
