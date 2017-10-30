@@ -74,13 +74,13 @@ public class GameManager : Singleton<GameManager > {
         switch (monsterIndex)
         {
             case 0:
-                type = "JerryMoveForward";
+                type = "Jerry";
                 break;
             case 1:
-                type = "BirdPersonMoveForward";
+				type = "BirdPerson";
                 break;
             case 2:
-                type = "MrNeedfullMoveForward";
+                type = "MrNeedful";
                 break;
             default:
                 break;

@@ -9,48 +9,49 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1186041524617912}
+  m_RootGameObject: {fileID: 1338657119432806}
   m_IsPrefabParent: 1
---- !u!1 &1186041524617912
+--- !u!1 &1338657119432806
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4725806061351810}
-  - component: {fileID: 212371584277884408}
-  - component: {fileID: 95828260468834386}
+  - component: {fileID: 4545371913872774}
+  - component: {fileID: 212318854140097828}
+  - component: {fileID: 95436114995902498}
+  - component: {fileID: 114741099814320598}
   m_Layer: 0
-  m_Name: RickMoveBackward
-  m_TagString: Player
+  m_Name: Jerry
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4725806061351810
+--- !u!4 &4545371913872774
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1186041524617912}
+  m_GameObject: {fileID: 1338657119432806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &95828260468834386
+--- !u!95 &95436114995902498
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1186041524617912}
+  m_GameObject: {fileID: 1338657119432806}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 517c44d47f8c14fa3a4a1763fed9d22a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 78f2ba65d657e4f1ba5adba037772e09, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -58,12 +59,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!212 &212371584277884408
+--- !u!114 &114741099814320598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1338657119432806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc545a3b06f00ab48a4eac131e4d95ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &212318854140097828
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1186041524617912}
+  m_GameObject: {fileID: 1338657119432806}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -92,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: -1560033015
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300008, guid: eb07965c7cb6a425288674f0cc6b51dd, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 7f72685062607444282f470e84627839, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

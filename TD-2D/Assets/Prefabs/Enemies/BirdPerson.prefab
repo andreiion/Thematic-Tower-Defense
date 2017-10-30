@@ -9,31 +9,32 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1788764411263046}
+  m_RootGameObject: {fileID: 1713425543234756}
   m_IsPrefabParent: 1
---- !u!1 &1788764411263046
+--- !u!1 &1713425543234756
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4010315000365928}
-  - component: {fileID: 212889071704397268}
-  - component: {fileID: 95782938306414854}
+  - component: {fileID: 4573739919602332}
+  - component: {fileID: 212357744334489822}
+  - component: {fileID: 95713990378983780}
+  - component: {fileID: 114216812567522792}
   m_Layer: 0
-  m_Name: MortyMoveBackward
-  m_TagString: Player
+  m_Name: BirdPerson
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4010315000365928
+--- !u!4 &4573739919602332
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1788764411263046}
+  m_GameObject: {fileID: 1713425543234756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -41,16 +42,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &95782938306414854
+--- !u!95 &95713990378983780
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1788764411263046}
+  m_GameObject: {fileID: 1713425543234756}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c6f38b6b8ce9a4ffd8ab4fd730b57c5b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d2be58d9338545c9a4822680f64a21b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -58,12 +59,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!212 &212889071704397268
+--- !u!114 &114216812567522792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1713425543234756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc545a3b06f00ab48a4eac131e4d95ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &212357744334489822
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1788764411263046}
+  m_GameObject: {fileID: 1713425543234756}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -92,12 +104,12 @@ SpriteRenderer:
   m_SortingLayerID: -1560033015
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300018, guid: f81f04337e94f47f0a725ef082bf8050, type: 3}
+  m_Sprite: {fileID: 21300002, guid: ac73a3190b86d48418121b907edbd391, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.23, y: 1.6}
+  m_Size: {x: 1.25, y: 1.62}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
