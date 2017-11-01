@@ -76,7 +76,7 @@ public class TileScript : MonoBehaviour {
 		tower.GetComponent<SpriteRenderer> ().sortingOrder = GridPosition.Y;
 		tower.transform.SetParent (transform); 	
 
-		Hover.Instance.Deactivate ();
+		//Hover.Instance.Deactivate ();
 
 		IsEmpty = false;
 		ColorTile (Color.white);

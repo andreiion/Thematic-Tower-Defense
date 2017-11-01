@@ -207,12 +207,12 @@ Prefab:
     - target: {fileID: 224373659320813180, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 420
+      value: 472.5
       objectReference: {fileID: 0}
     - target: {fileID: 224373659320813180, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 170
+      value: 193.5
       objectReference: {fileID: 0}
     - target: {fileID: 224373659320813180, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
@@ -412,7 +412,7 @@ Prefab:
     - target: {fileID: 224876796024723480, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 170
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 224572544492067946, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
@@ -422,7 +422,7 @@ Prefab:
     - target: {fileID: 224572544492067946, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 170
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224737591191466430, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
@@ -432,7 +432,7 @@ Prefab:
     - target: {fileID: 224737591191466430, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 170
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 224793071865596162, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973403ab5c21e4f6ba1c6dac7f40c5c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currencyText: {fileID: 0}
+  currencyText: {fileID: 1492022162}
 --- !u!114 &1373297617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,7 +686,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 
 --- !u!222 &1373297618
 CanvasRenderer:
   m_ObjectHideFlags: 0
