@@ -67,6 +67,8 @@ public class GameManager : Singleton<GameManager > {
     // tipu' inamicului
     private IEnumerator SpawnWave()
     {
+        LevelManager.Instance.GeneratePath();
+
         int monsterIndex = Random.Range(0,3);
 
         string type = string.Empty;

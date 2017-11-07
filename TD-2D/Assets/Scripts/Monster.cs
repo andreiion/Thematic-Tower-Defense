@@ -4,14 +4,36 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour {
 
-	public void Spawn()
+    [SerializeField]
+    private float speed;
+
+    private Stack<Node> path;
+
+    public Point GridPosition { get; set; }
+
+    private Vector3 destination;
+
+    public bool IsActive { get; set; }
+
+    private Animator myAnimator;
+
+    private void Update()
+    {
+        Move();
+    }
+
+    public void Spawn()
     {
         transform.position = LevelManager.Instance.BluePortal.transform.position;
 
-        StartCoroutine(Scale(new Vector3(0.1f, 0.1f), new Vector3(1, 1)));
+        myAnimator = GetComponent<Animator>();
+
+        StartCoroutine(Scale(new Vector3(0.1f, 0.1f), new Vector3(1, 1), false));
+
+        SetPath(LevelManager.Instance.Path);
     }
 
-    public IEnumerator Scale(Vector3 from,Vector3 to)
+    public IEnumerator Scale(Vector3 from,Vector3 to, bool remove)
     {
         float progress = 0;
 
@@ -25,5 +47,88 @@ public class Monster : MonoBehaviour {
         }
 
         transform.localScale = to;
+
+        IsActive = true;
+        if (remove)
+        {
+            Release();
+        }
+    }
+
+    private void Move()
+    {
+        if (IsActive)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, destination, speed * Time.deltaTime);
+
+            if (transform.position == destination)
+            {
+                if (path != null && path.Count > 0)
+                {
+                    Animate(GridPosition, path.Peek().GridPosition);
+
+                    GridPosition = path.Peek().GridPosition;
+                    destination = path.Pop().WorldPosition;
+                }
+            }
+        }
+        
+    }
+
+    private void SetPath(Stack<Node> newPath)
+    {
+        if(newPath != null)
+        {
+            this.path = newPath;
+
+            Animate(GridPosition, path.Peek().GridPosition);
+
+            GridPosition = path.Peek().GridPosition;
+            destination = path.Pop().WorldPosition;
+        }
+    }
+
+    private void Animate(Point currentPos, Point newPos)
+    {
+        if(currentPos.Y > newPos.Y)
+        {
+            //ne miscam in jos
+            myAnimator.SetTrigger("MoveForward");
+        }
+        else if(currentPos.Y < newPos.Y)
+        {
+            //ne miscam in sus
+            myAnimator.SetTrigger("MoveBackward");
+        }
+
+        if(currentPos.Y == newPos.Y)
+        {
+            if(currentPos.X > newPos.X)
+            {
+                // ne miscam la stanga
+                myAnimator.SetTrigger("MoveLeft");
+            }
+            else if(currentPos.X < newPos.X)
+            {
+                //ne miscam la dreapta
+                myAnimator.SetTrigger("MoveRight");
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "RedPortal")
+        {
+            StartCoroutine(Scale(new Vector3(1,1),new Vector3(0.1f, 0.1f), true));
+        }
+    }
+
+    private void Release()
+    {
+        IsActive = false;
+        GridPosition = LevelManager.Instance.BlueSpawn;
+        GameManager.Instance.Pool.ReleaseObject(gameObject);
+        
     }
 }

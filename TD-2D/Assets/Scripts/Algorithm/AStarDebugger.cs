@@ -21,13 +21,13 @@ public class AStarDebugger : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		ClickTile ();
+	//void Update () {
+	//	ClickTile ();
 
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			AStarAlgorithm.GetPath (start.GridPosition, goal.GridPosition);
-		}
-	}
+	//	if (Input.GetKeyDown (KeyCode.Space)) {
+	//		AStarAlgorithm.GetPath (start.GridPosition, goal.GridPosition);
+	//	}
+	//}
 
 	private void ClickTile() {
 		// Right-click to set start and goal

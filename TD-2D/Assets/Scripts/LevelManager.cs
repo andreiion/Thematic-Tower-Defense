@@ -32,12 +32,34 @@ public class LevelManager : Singleton<LevelManager> {
 
     private Point mapSize;
 
+    private Stack<Node> path;
+
+    public Stack<Node> Path
+    {
+        get
+        {
+            if (path == null)
+            {
+                GeneratePath();
+            }
+            return new Stack<Node>(new Stack<Node>(path));
+        }
+    }
+
 	public float TileSize {
 		get { return tilePrefabs[0].GetComponent<SpriteRenderer> ().sprite.bounds.size.x; }
 	}
 
-	// Use this for initialization
-	void Start () {
+    public Point BlueSpawn
+    {
+        get
+        {
+            return blueSpawn;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
 		CreateLevel();
 	}
 	
@@ -106,7 +128,7 @@ public class LevelManager : Singleton<LevelManager> {
             
 		} else {
 			blueSpawn = start;
-            GameObject tmp = (GameObject)Instantiate (bluePortalPrefab, Tiles [blueSpawn].GetComponent<TileScript>().worldPos , Quaternion.identity);
+            GameObject tmp = (GameObject)Instantiate (bluePortalPrefab, Tiles [BlueSpawn].GetComponent<TileScript>().worldPos , Quaternion.identity);
             BluePortal = tmp.GetComponent<Portal>();
 
             BluePortal.name = "BluePortal";
@@ -117,6 +139,11 @@ public class LevelManager : Singleton<LevelManager> {
 		return position.X >= 0 && position.Y >= 0 &&
 			position.X < mapSize.X && position.Y < mapSize.Y;
 	}
+
+    public void GeneratePath()
+    {
+        path = AStarAlgorithm.GetPath(BlueSpawn, redSpawn);
+    }
 
 }
   

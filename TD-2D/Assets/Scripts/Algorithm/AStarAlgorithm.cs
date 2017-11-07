@@ -21,7 +21,7 @@ public static class AStarAlgorithm {
 		}
 	}
 
-	public static void GetPath(Point start, Point goal) {
+	public static Stack<Node> GetPath(Point start, Point goal) {
 		
 		if (nodes == null) {
 			CreateNodes ();  
@@ -111,9 +111,11 @@ public static class AStarAlgorithm {
 
         }
 
+        return finalPath;
+
 
         //*****THIS IS ONLY FOR DEBUGGING
-        GameObject.Find("AStarDebugger").GetComponent<AStarDebugger>().DebugPath(openList, closedList,finalPath);   
+        //GameObject.Find("AStarDebugger").GetComponent<AStarDebugger>().DebugPath(openList, closedList,finalPath);   
 	}
 
     private static bool ConnectedDiagonally(Node currentNode, Node neighbour)

@@ -781,6 +781,7 @@ GameObject:
   - component: {fileID: 1492022161}
   - component: {fileID: 1492022163}
   - component: {fileID: 1492022162}
+  - component: {fileID: 1492022164}
   m_Layer: 5
   m_Name: CurrencyText
   m_TagString: Untagged
@@ -845,6 +846,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1492022160}
+--- !u!225 &1492022164
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1492022160}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!224 &1577656675 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224373659320813180, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
