@@ -11,7 +11,7 @@ public class TileScript : MonoBehaviour {
 	public bool IsEmpty { get; set; }
 	public bool Debugging { get; set; }
 
-	public SpriteRenderer SpriteRenderer { get; set;}
+    private SpriteRenderer spriteRenderer;
 
 	public Point GridPosition { get; private set; }
 
@@ -38,7 +38,7 @@ public class TileScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		SpriteRenderer = GetComponent<SpriteRenderer> (); 
+		spriteRenderer = GetComponent<SpriteRenderer> (); 
 	}
 	
 	// Update is called once per frame
@@ -86,7 +86,7 @@ public class TileScript : MonoBehaviour {
 	}
 
 	private void ColorTile(Color newColor) {
-		SpriteRenderer.color = newColor;
+		spriteRenderer.color = newColor;
 	}
 
 }
