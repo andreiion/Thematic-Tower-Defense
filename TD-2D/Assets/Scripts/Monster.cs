@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Monster : MonoBehaviour {
+public class Monster : MonoBehaviour
+{
 
     [SerializeField]
     private float speed;
@@ -33,11 +34,11 @@ public class Monster : MonoBehaviour {
         SetPath(LevelManager.Instance.Path);
     }
 
-    public IEnumerator Scale(Vector3 from,Vector3 to, bool remove)
+    public IEnumerator Scale(Vector3 from, Vector3 to, bool remove)
     {
         float progress = 0;
 
-        while(progress <= 1)
+        while (progress <= 1)
         {
             transform.localScale = Vector3.Lerp(from, to, progress);
 
@@ -72,12 +73,12 @@ public class Monster : MonoBehaviour {
                 }
             }
         }
-        
+
     }
 
     private void SetPath(Stack<Node> newPath)
     {
-        if(newPath != null)
+        if (newPath != null)
         {
             this.path = newPath;
 
@@ -90,25 +91,25 @@ public class Monster : MonoBehaviour {
 
     private void Animate(Point currentPos, Point newPos)
     {
-        if(currentPos.Y > newPos.Y)
+        if (currentPos.Y > newPos.Y)
         {
             //ne miscam in jos
             myAnimator.SetTrigger("MoveForward");
         }
-        else if(currentPos.Y < newPos.Y)
+        else if (currentPos.Y < newPos.Y)
         {
             //ne miscam in sus
             myAnimator.SetTrigger("MoveBackward");
         }
 
-        if(currentPos.Y == newPos.Y)
+        if (currentPos.Y == newPos.Y)
         {
-            if(currentPos.X > newPos.X)
+            if (currentPos.X > newPos.X)
             {
                 // ne miscam la stanga
                 myAnimator.SetTrigger("MoveLeft");
             }
-            else if(currentPos.X < newPos.X)
+            else if (currentPos.X < newPos.X)
             {
                 //ne miscam la dreapta
                 myAnimator.SetTrigger("MoveRight");
@@ -120,7 +121,7 @@ public class Monster : MonoBehaviour {
     {
         if (other.tag == "RedPortal")
         {
-            StartCoroutine(Scale(new Vector3(1,1),new Vector3(0.1f, 0.1f), true));
+            StartCoroutine(Scale(new Vector3(1, 1), new Vector3(0.1f, 0.1f), true));
         }
     }
 
@@ -129,6 +130,7 @@ public class Monster : MonoBehaviour {
         IsActive = false;
         GridPosition = LevelManager.Instance.BlueSpawn;
         GameManager.Instance.Pool.ReleaseObject(gameObject);
-        
+        GameManager.Instance.RemoveMonster(this);
+
     }
 }

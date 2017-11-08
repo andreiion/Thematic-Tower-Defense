@@ -242,6 +242,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &345484401 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1827808529496018, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
+    type: 2}
+  m_PrefabInternal: {fileID: 651431319}
 --- !u!1001 &651431319
 Prefab:
   m_ObjectHideFlags: 0
@@ -252,12 +257,12 @@ Prefab:
     - target: {fileID: 224373659320813180, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 469.5
+      value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 224373659320813180, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 193.5
+      value: 169.5
       objectReference: {fileID: 0}
     - target: {fileID: 224373659320813180, guid: 616463d64ae3e43ec9e8c6be7c2b04b6,
         type: 2}
@@ -699,6 +704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currencyText: {fileID: 1492022162}
+  waveBtn: {fileID: 345484401}
 --- !u!114 &1373297617
 MonoBehaviour:
   m_ObjectHideFlags: 0
